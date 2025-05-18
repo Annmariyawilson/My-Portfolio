@@ -168,34 +168,57 @@ header .btn-sm:hover {
 }
 
 #education {
-    padding: 80px 0;
-    background-color: #fff;
-    text-align: center;
-    border-bottom: 2px solid #eaeaea;
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 2px solid #eaeaea;
 }
 
 #education h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 40px;
+  color: #333;
+  margin-bottom: 40px;
 }
 
 #education .degree {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 20px;
+  font-size: 0.7rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 #education .institution {
-    font-size: 1.2rem;
-    color: #666;
+  font-size: 1.2rem;
+  color: #666;
 }
 
 #education .year {
-    font-size: 1.2rem;
-    color: #007bff;
+  font-size: 1.2rem;
+  color: #007bff;
 }
 
+/* Responsive font scaling for smaller screens */
+@media (max-width: 768px) {
+  #education h2 {
+    font-size: 2rem;
+  }
+
+  #education .degree,
+  #education .institution,
+  #education .year {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #education h2 {
+    font-size: 1rem;
+  }
+
+  #education .degree,
+  #education .institution,
+  #education .year {
+    font-size: 0.3rem;
+  }
+}
 #experience {
     padding: 80px 0;
     background-color: #f9f9f9;
