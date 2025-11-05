@@ -67,62 +67,69 @@
     </nav>
 
     <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-4 text-center mb-5 mb-lg-0 animate animate-left">
-            <img
-              src="./image/p1.jpeg"
-              alt="Annmariya Wilson"
-              class="profile-img"
-            />
-          </div>
-          <div class="col-lg-8">
-            <h1>Annmariya Wilson</h1>
-            <p class="lead">Junior Web Developer | MERN Stack | BCA Graduate</p>
-            <p>
-              Passionate software developer with strong fundamentals in data
-              structures, algorithms, and system design. Proficient in building
-              scalable and responsive full-stack applications using the MERN &
-              MEAN stacks. Currently working on impactful web solutions with
-              modern technologies.
-            </p>
-            <div class="d-flex flex-wrap mt-4">
-              <a
-                href="./image/Annmariya_Wilson.pdf"
-                class="btn btn-success me-3 mb-3"
-                download
-              >
-                <i class="fas fa-download me-2"></i>Download Resume
-              </a>
-              <div class="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/annmariya-wilson"
-                  target="_blank"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="https://github.com/Annmariyawilson" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://www.instagram.com/annmariyawilson_/"
-                  target="_blank"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-            </div>
+<section id="about">
+  <video autoplay muted loop playsinline id="aboutVideo">
+    <source src="./image/profile.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4 text-center mb-5 mb-lg-0 animate animate-left">
+        <img
+          src="./image/p1.jpeg"
+          alt="Annmariya Wilson"
+          class="profile-img"
+        />
+      </div>
+      <div class="col-lg-8 animate animate-right">
+        <h1>Annmariya Wilson</h1>
+        <p class="lead">
+          Software Developer | MERN / MEAN / Next.js Developer | BCA Graduate
+        </p>
+        <p>
+          Detail-oriented and results-driven Full-Stack Developer specializing
+          in MERN, MEAN, and Next.js frameworks. Experienced in designing
+          scalable, responsive applications with optimized RESTful APIs and
+          strong UI/UX principles.
+        </p>
+        <div class="d-flex flex-wrap mt-4">
+          <a
+            href="./image/Annmariya_Wilson.pdf"
+            class="btn btn-success me-3 mb-3 "
+            download
+          >
+            <i class="fas fa-download me-2"></i><span class="text-white">Download Resume</span>
+          </a>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/annmariya-wilson"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/Annmariyawilson" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/annmariyawilson_/"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Education Section -->
     <section id="education">
+      <div id="particles-edu"></div>
       <div class="container animate animate-up">
         <h2 class="section-title">Education</h2>
         <div class="row">
           <div class="col-md-6 animate animate-right mt-3">
-            <div class="education-card">
+            <div class="education-card glow-card">
               <h3 class="education-title">Bachelor of Computer Application</h3>
               <p class="education-meta">
                 <i class="fas fa-university"></i> Kannur University
@@ -139,8 +146,9 @@
               </p>
             </div>
           </div>
+
           <div class="col-md-6 animate animate-left delay-1 mt-3">
-            <div class="education-card">
+            <div class="education-card glow-card">
               <h3 class="education-title">Higher Secondary Education</h3>
               <p class="education-meta">
                 <i class="fas fa-school"></i> St. Jude's H S S
@@ -164,90 +172,175 @@
     <section id="skills">
       <div class="container">
         <h2 class="section-title">Skills</h2>
-        <div class="skills-container animate">
-          <div class="row">
+        <div class="skills-container animate animate-up">
+          <div class="row g-4">
+            <!-- Frontend -->
             <div class="col-md-6">
               <div class="skill-category">
-                <h4>Frontend Development</h4>
-                <div class="skill-item">
-                  <span class="skill-name me-2">HTML</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 100%"></div>
+                <h4>
+                  <i class="fas fa-code text-success"></i> Frontend Development
+                </h4>
+                <div class="skill-grid">
+                  <div class="skill-item">
+                    <span>React.js</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 95%"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-name me-2">CSS</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 100%"></div>
+                  <div class="skill-item">
+                    <span>Next.js</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 92%"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-name me-2">Bootstrap</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 96%"></div>
+                  <div class="skill-item">
+                    <span>Angular</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 90%"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-name me-2">JavaScript</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 80%"></div>
+                  <div class="skill-item">
+                    <span>JavaScript (ES6+)</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 88%"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-name me-2">React</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 88%"></div>
+                  <div class="skill-item">
+                    <span>Redux</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 85%"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-name me-2">Angular</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 89%"></div>
+                  <div class="skill-item">
+                    <span>HTML5</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>CSS3</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 98%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Bootstrap</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 96%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Tailwind CSS</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>shadcn/ui</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 80%"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Backend & Tools -->
             <div class="col-md-6">
               <div class="skill-category">
-                <h4>Backend & Other Skills</h4>
-                <div class="skill-item">
-                  <span class="skill-name me-2">Node.js</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 80%"></div>
+                <h4>
+                  <i class="fas fa-server text-success"></i> Backend & Tools
+                </h4>
+                <div class="skill-grid">
+                  <div class="skill-item">
+                    <span>Node.js</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 85%"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-name me-2">Express</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 80%"></div>
+                  <div class="skill-item">
+                    <span>Express.js</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 85%"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-name me-2">MongoDB</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 85%"></div>
+                  <div class="skill-item">
+                    <span>REST APIs</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 88%"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-name me-2">MySQL</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 80%"></div>
+                  <div class="skill-item">
+                    <span>Authentication (JWT, RBAC)</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 85%"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-name me-2">Git</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 100%"></div>
+                  <div class="skill-item">
+                    <span>MongoDB / Mongoose</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 90%"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-name me-2">Responsive Design</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style="width: 100%"></div>
+                  <div class="skill-item">
+                    <span>MySQL</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Git / GitHub / Bitbucket</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Postman / Vercel</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Jira / Slack</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Agile / Scrum</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 85%"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Width Core Competencies Slider -->
+      <div class="core-slider-wrapper">
+        <h4 class="core-title">
+          <i class="fas fa-lightbulb text-success"></i> Core Competencies
+        </h4>
+        <div class="core-slider">
+          <div class="core-track">
+            <div class="core-item">UI/UX Implementation</div>
+            <div class="core-item">API Integration</div>
+            <div class="core-item">State Management</div>
+            <div class="core-item">Responsive Web Design</div>
+            <div class="core-item">Problem Solving</div>
+            <div class="core-item">Code Optimization</div>
+            <div class="core-item">Cross-Team Collaboration</div>
+            <!-- duplicated for smooth infinite loop -->
+            <div class="core-item">UI/UX Implementation</div>
+            <div class="core-item">API Integration</div>
+            <div class="core-item">State Management</div>
+            <div class="core-item">Responsive Web Design</div>
+            <div class="core-item">Problem Solving</div>
+            <div class="core-item">Code Optimization</div>
+            <div class="core-item">Cross-Team Collaboration</div>
           </div>
         </div>
       </div>
@@ -258,12 +351,41 @@
       <div class="container">
         <h2 class="section-title">Professional Experience</h2>
         <div class="timeline">
+          <div class="timeline-item right animate animate-left delay-1">
+            <div class="timeline-content">
+              <div class="timeline-date">Aug 2025 – Present</div>
+              <h3 class="timeline-title">Software Developer (Trainee)</h3>
+              <p class="timeline-company">Think Forge Global, Malappuram</p>
+              <ul class="timeline-description">
+                <li>
+                  Next.js, Tailwind CSS, Bitbucket, Jira, Slack, Agile/Scrum
+                </li>
+                <li>
+                  Contributed to the MorfinFX trading platform using Next.js and
+                  React hooks.
+                </li>
+                <li>
+                  Enhanced UI performance and SEO with optimized components.
+                </li>
+                <li>Collaborated in Agile sprints via Jira and Slack.</li>
+                <li>
+                  Integrated RESTful APIs ensuring consistent UI behavior.
+                </li>
+                <li>Conducted code reviews and performance tuning.</li>
+              </ul>
+            </div>
+          </div>
+
           <div class="timeline-item left animate animate-right">
             <div class="timeline-content">
-              <div class="timeline-date">Mar 2025 – Present</div>
+              <div class="timeline-date">Mar 2025 – Aug 2025</div>
               <h3 class="timeline-title">Junior Web Developer</h3>
               <p class="timeline-company">Nexpression, Ernakulam</p>
               <ul class="timeline-description">
+                <li>
+                  Angular, React.js, Node.js, Express.js, MongoDB, Bootstrap,
+                  Tailwind CSS
+                </li>
                 <li>Built scalable MERN/MEAN stack applications</li>
                 <li>
                   Developed reusable components with Bootstrap/Tailwind CSS
@@ -323,7 +445,7 @@
                 </p>
                 <div class="project-links">
                   <a
-                    href="https://angular-clg.onrender.com/"
+                    href="https://holycrosscollege.co.in/"
                     class="btn btn-success btn-sm"
                     target="_blank"
                     >View</a
@@ -396,7 +518,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -485,6 +606,12 @@
               <p class="certification-date">
                 <strong>Duration:</strong> May - December 2025
               </p>
+              <a
+                href="https://drive.google.com/file/d/1RRakbO9A7g9SByOrOti4SkGVAuqWlYOK/view"
+                target="_blank"
+                class="btn btn-primary mt-3"
+                >View Certificate</a
+              >
             </div>
           </div>
 
@@ -517,7 +644,6 @@
         <div class="row">
           <div class="col-lg-5 animate">
             <div class="contact-info">
-              <h3 class="mb-4">Contact Information</h3>
               <div class="contact-item">
                 <div class="contact-icon">
                   <i class="fas fa-map-marker-alt"></i>
@@ -607,12 +733,9 @@
           <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </div>
-        <div class="copyright">
-          &copy; 2025 Annmariya Wilson. All Rights Reserved.
-        </div>
       </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
   </body>

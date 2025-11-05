@@ -286,3 +286,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Duplicate core items for seamless infinite scroll
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".core-track");
+  if (track) {
+    const items = Array.from(track.children);
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      track.appendChild(clone);
+    });
+  }
+});
+
+
+particlesJS("particles-edu", {
+  particles: {
+    number: { value: 50, density: { enable: true, value_area: 800 } },
+    color: { value: "#6bbd99" },
+    shape: { type: "circle" },
+    opacity: { value: 0.3, random: true },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 130, color: "#4a8d6d", opacity: 0.3, width: 1 },
+    move: { enable: true, speed: 2, direction: "none", out_mode: "out" }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: false } },
+    modes: { grab: { distance: 150, line_linked: { opacity: 0.6 } } }
+  },
+  retina_detect: true
+});
