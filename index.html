@@ -67,60 +67,62 @@
     </nav>
 
     <!-- About Section -->
-<section id="about">
-  <video autoplay muted loop playsinline id="aboutVideo">
-    <source src="./image/profile.mp4" type="video/mp4" />
-  </video>
-  <div class="overlay"></div>
+    <section id="about">
+      <video autoplay muted loop playsinline id="aboutVideo">
+        <source src="./image/profile.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
 
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-4 text-center mb-5 mb-lg-0 animate animate-left">
-        <img
-          src="./image/p1.jpeg"
-          alt="Annmariya Wilson"
-          class="profile-img"
-        />
-      </div>
-      <div class="col-lg-8 animate animate-right">
-        <h1>Annmariya Wilson</h1>
-        <p class="lead">
-          Software Developer | MERN / MEAN / Next.js Developer | BCA Graduate
-        </p>
-        <p>
-          Detail-oriented and results-driven Full-Stack Developer specializing
-          in MERN, MEAN, and Next.js frameworks. Experienced in designing
-          scalable, responsive applications with optimized RESTful APIs and
-          strong UI/UX principles.
-        </p>
-        <div class="d-flex flex-wrap mt-4">
-          <a
-            href="./image/Annmariya_Wilson.pdf"
-            class="btn btn-success me-3 mb-3 "
-            download
-          >
-            <i class="fas fa-download me-2"></i><span class="text-white">Download Resume</span>
-          </a>
-          <div class="social-icons">
-            <a
-              href="https://www.linkedin.com/in/annmariya-wilson"
-              target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a href="https://github.com/Annmariyawilson" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/annmariyawilson_/"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center mb-5 mb-lg-0 animate animate-left">
+            <img
+              src="./image/p1.jpeg"
+              alt="Annmariya Wilson"
+              class="profile-img"
+            />
+          </div>
+          <div class="col-lg-8 animate animate-right">
+            <h1>Annmariya Wilson</h1>
+            <p class="lead">
+              Software Developer | MERN / MEAN / Next.js Developer | BCA
+              Graduate
+            </p>
+            <p>
+              Detail-oriented and results-driven Full-Stack Developer
+              specializing in MERN, MEAN, and Next.js frameworks. Experienced in
+              designing scalable, responsive applications with optimized RESTful
+              APIs and strong UI/UX principles.
+            </p>
+            <div class="d-flex flex-wrap mt-4">
+              <a
+                href="./image/Annmariya_Wilson.pdf"
+                class="btn btn-success me-3 mb-3"
+                download
+              >
+                <i class="fas fa-download me-2"></i
+                ><span class="text-white">Download Resume</span>
+              </a>
+              <div class="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/annmariya-wilson"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://github.com/Annmariyawilson" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/annmariyawilson_/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Education Section -->
     <section id="education">
@@ -146,7 +148,6 @@
               </p>
             </div>
           </div>
-
           <div class="col-md-6 animate animate-left delay-1 mt-3">
             <div class="education-card glow-card">
               <h3 class="education-title">Higher Secondary Education</h3>
@@ -418,104 +419,125 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!--  Projects Section -->
     <section id="projects">
       <div class="container">
         <h2 class="section-title">Projects</h2>
-        <div class="row">
-          <!-- College Management System -->
-          <div class="col-lg-4 col-md-6 animate mt-3">
-            <div class="project-card">
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
               <img
                 src="./image/college.jpg"
-                class="project-img"
                 alt="College Management System"
+                class="project-img"
               />
-              <div class="project-body">
-                <h3 class="project-title">College Management System</h3>
-                <div class="project-tech">
-                  <span class="tech-badge">Angular</span>
-                  <span class="tech-badge">MongoDB</span>
-                  <span class="tech-badge">Express</span>
-                  <span class="tech-badge">Node.js</span>
-                </div>
-                <p>
-                  Admin dashboard with role-based access and full-stack CRUD
-                  using the MEAN stack.
-                </p>
-                <div class="project-links">
-                  <a
-                    href="https://holycrosscollege.co.in/"
-                    class="btn btn-success btn-sm"
-                    target="_blank"
-                    >View</a
-                  >
-                </div>
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">College Management System</h5>
+              <div class="project-tech">
+                <span class="tech-badge">Angular</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">Express</span>
+                <span class="tech-badge">Node.js</span>
               </div>
+              <p class="card-text">
+                A complete MEAN stack platform enabling admin control, student
+                data tracking, and course management.
+              </p>
+              <a
+                href="https://holycrosscollege.co.in/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
             </div>
           </div>
 
-          <!-- REST Countries API Web App -->
-          <div class="col-lg-4 col-md-6 animate delay-1 mt-3">
-            <div class="project-card">
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
               <img
                 src="./image/country.jpg"
+                alt="REST Countries Explorer"
                 class="project-img"
-                alt="REST Countries API"
               />
-              <div class="project-body">
-                <h3 class="project-title">REST Countries API Web App</h3>
-                <div class="project-tech">
-                  <span class="tech-badge">JavaScript</span>
-                  <span class="tech-badge">API</span>
-                  <span class="tech-badge">Bootstrap</span>
-                  <span class="tech-badge">HTML</span>
-                </div>
-                <p>
-                  Fetches and displays country data like flags, population, and
-                  region from a public API.
-                </p>
-                <div class="project-links">
-                  <a
-                    href="https://annmariyawilson.github.io/Api/"
-                    class="btn btn-success btn-sm"
-                    target="_blank"
-                    >View</a
-                  >
-                </div>
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">REST Countries Explorer</h5>
+              <div class="project-tech">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">API</span>
+                <span class="tech-badge">Bootstrap</span>
               </div>
+              <p class="card-text">
+                Interactive app displaying country data with flags, population,
+                and region details via REST API.
+              </p>
+              <a
+                href="https://annmariyawilson.github.io/Api/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
             </div>
           </div>
 
-          <!-- E-Commerce Website -->
-          <div class="col-lg-4 col-md-6 animate delay-2 mt-3">
-            <div class="project-card">
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
               <img
                 src="./image/ecommerce.jpg"
+                alt="E-Commerce Dashboard"
                 class="project-img"
-                alt="E-Commerce Website"
               />
-              <div class="project-body">
-                <h3 class="project-title">E-Commerce Website</h3>
-                <div class="project-tech">
-                  <span class="tech-badge">MongoDB</span>
-                  <span class="tech-badge">Express</span>
-                  <span class="tech-badge">React</span>
-                  <span class="tech-badge">Node</span>
-                </div>
-                <p>
-                  A full-featured e-commerce platform with admin and customer
-                  views.
-                </p>
-                <div class="project-links">
-                  <a
-                    href="https://ecommerce-frontend-two-eta.vercel.app/"
-                    class="btn btn-success btn-sm"
-                    target="_blank"
-                    >View</a
-                  >
-                </div>
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">E-Commerce Dashboard</h5>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">Node.js</span>
               </div>
+              <p class="card-text">
+                Full-featured online store with product CRUD, checkout, and
+                authentication.
+              </p>
+              <a
+                href="https://ecommerce-frontend-two-eta.vercel.app/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img
+                src="./image/trade.jpg"
+                alt="Trade Learners UI"
+                class="project-img"
+              />
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">Trade Learners UI</h5>
+              <div class="project-tech">
+                <span class="tech-badge">Angular</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">CSS</span>
+              </div>
+              <p class="card-text">
+                Responsive single-page design for a trading education website
+                built with Angular.
+              </p>
+              <a
+                href="https://trade-learners.vercel.app/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
             </div>
           </div>
         </div>
@@ -543,7 +565,7 @@
               <a
                 href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/gmf3ypEXBj2wvfQWC_Tata%20Group_Exdne3RPDNvbbBXyC_1708620481345_completion_certificate.pdf"
                 target="_blank"
-                class="btn btn-primary mt-3"
+                class="btn btn-success mt-3"
                 >View Certificate</a
               >
             </div>
@@ -566,7 +588,7 @@
               <a
                 href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_Exdne3RPDNvbbBXyC_1708849965426_completion_certificate.pdf"
                 target="_blank"
-                class="btn btn-primary mt-3"
+                class="btn btn-success mt-3"
                 >View Certificate</a
               >
             </div>
@@ -587,7 +609,7 @@
               <a
                 href="https://www.credly.com/badges/ac2b22a0-6db6-4ca4-9dc1-224441f40f74/linked_in_profile"
                 target="_blank"
-                class="btn btn-primary mt-3"
+                class="btn btn-success mt-3"
                 >View Certificate</a
               >
             </div>
@@ -609,7 +631,7 @@
               <a
                 href="https://drive.google.com/file/d/1RRakbO9A7g9SByOrOti4SkGVAuqWlYOK/view"
                 target="_blank"
-                class="btn btn-primary mt-3"
+                class="btn btn-success mt-3"
                 >View Certificate</a
               >
             </div>
@@ -628,7 +650,7 @@
               <a
                 href="https://www.credly.com/badges/e3f22f52-66c2-48d6-b75b-c0b9c4fe7fd6/linked_in_profile"
                 target="_blank"
-                class="btn btn-primary mt-3"
+                class="btn btn-success mt-3"
                 >View Certificate</a
               >
             </div>
