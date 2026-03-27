@@ -21,11 +21,10 @@
 
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
           <span class="desktop-brand">Annmariya Wilson</span>
-          <span class="mobile-brand">AW</span>
         </a>
         <button
           class="navbar-toggler"
@@ -42,6 +41,9 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#summary">Summary</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
@@ -68,350 +70,344 @@
 
     <!-- About Section -->
     <section id="about">
-      <video autoplay muted loop playsinline id="aboutVideo">
-        <source src="./image/profile.mp4" type="video/mp4" />
-      </video>
-      <div class="overlay"></div>
-
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4 text-center mb-5 mb-lg-0 animate animate-left">
-            <img
-              src="./image/p1.jpeg"
-              alt="Annmariya Wilson"
-              class="profile-img"
-            />
-          </div>
-          <div class="col-lg-8 animate animate-right">
-            <h1>Annmariya Wilson</h1>
-            <p class="lead">
-              Software Developer | MERN / MEAN / Next.js Developer | BCA
-              Graduate
-            </p>
-            <p>
-              Detail-oriented and results-driven Full-Stack Developer
-              specializing in MERN, MEAN, and Next.js frameworks. Experienced in
-              designing scalable, responsive applications with optimized RESTful
-              APIs and strong UI/UX principles.
+          <div class="col-lg-7 order-2 order-lg-1 hero-text animate animate-left">
+            <h1>Hi, I'm <span class="gradient-text">Annmariya Wilson</span></h1>
+            <p class="lead">Full Stack Developer | Next.js | MERN / MEAN | AI-Assisted Development</p>
+            <p class="hero-description">
+              Detail-oriented and results-driven Full-Stack Developer specializing in MERN, MEAN, and Next.js frameworks. I design scalable, responsive applications with a focus on clean code and exceptional UI/UX principles.
             </p>
             <div class="d-flex flex-wrap mt-4">
-              <a
-                href="./image/Annmariya_Wilson.pdf"
-                class="btn btn-success me-3 mb-3"
-                download
-              >
-                <i class="fas fa-download me-2"></i
-                ><span class="text-white">Download Resume</span>
+              <a href="./image/Annmariya_Wilson.pdf" class="btn-premium me-3 mb-3" download>
+                <i class="fas fa-download"></i>
+                <span>Download Resume</span>
               </a>
               <div class="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/annmariya-wilson"
-                  target="_blank"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="https://github.com/Annmariyawilson" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://www.instagram.com/annmariyawilson_/"
-                  target="_blank"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+                <a href="https://www.linkedin.com/in/annmariya-wilson" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Annmariyawilson" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/annmariyawilson_/" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-      <div id="particles-edu"></div>
-      <div class="container animate animate-up">
-        <h2 class="section-title">Education</h2>
-        <div class="row">
-          <div class="col-md-6 animate animate-right mt-3">
-            <div class="education-card glow-card">
-              <h3 class="education-title">Bachelor of Computer Application</h3>
-              <p class="education-meta">
-                <i class="fas fa-university"></i> Kannur University
-              </p>
-              <p class="education-meta">
-                <i class="fas fa-school"></i> St. Jude's Arts and Science
-                College
-              </p>
-              <p class="education-meta">
-                <i class="fas fa-calendar-alt"></i> 2021 - 2024
-              </p>
-              <p class="education-score">
-                <i class="fas fa-star"></i> CGPA: 7.5
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 animate animate-left delay-1 mt-3">
-            <div class="education-card glow-card">
-              <h3 class="education-title">Higher Secondary Education</h3>
-              <p class="education-meta">
-                <i class="fas fa-school"></i> St. Jude's H S S
-              </p>
-              <p class="education-meta">
-                <i class="fas fa-book"></i> Bio-Science
-              </p>
-              <p class="education-meta">
-                <i class="fas fa-calendar-alt"></i> 2019 - 2021
-              </p>
-              <p class="education-score">
-                <i class="fas fa-star"></i> Percentage: 76%
-              </p>
+          <div class="col-lg-5 order-1 order-lg-2 text-center mb-5 mb-lg-0 animate animate-right">
+            <div class="profile-img-container">
+              <img src="./image/p1.jpeg" alt="Annmariya Wilson" class="profile-img" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
+    <!-- Professional Summary Section - Luxury Dark Theme -->
+    <section id="summary" class="summary-section-dark">
+      <div class="luxury-bg-glow"></div>
       <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-container animate animate-up">
-          <div class="row g-4">
-            <!-- Frontend -->
-            <div class="col-md-6">
-              <div class="skill-category">
-                <h4>
-                  <i class="fas fa-code text-success"></i> Frontend Development
-                </h4>
-                <div class="skill-grid">
-                  <div class="skill-item">
-                    <span>React.js</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Next.js</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 92%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Angular</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>JavaScript (ES6+)</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 88%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Redux</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>HTML5</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>CSS3</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 98%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Bootstrap</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 96%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Tailwind CSS</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>shadcn/ui</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                  </div>
+        <div class="row align-items-center">
+          <!-- Left Side: Content -->
+          <div class="col-lg-8 order-2 order-lg-1 animate animate-left">
+            <div class="luxury-content-wrapper">
+              <div class="content-decoration">
+                <span class="gold-line"></span>
+              </div>
+              <p class="luxury-paragraph">
+                Results-driven Full-Stack Developer with over a year of experience building scalable web applications and dynamic platforms. Skilled in developing multi-role dashboards, integrating real-time data, and delivering seamless, mobile-first user experiences.
+              </p>
+              <p class="luxury-paragraph">
+                I leverage modern development practices and AI-assisted tools to accelerate workflows, optimize performance, and ensure high-quality outputs. With a strong focus on usability and detail, I collaborate closely with clients to turn ideas into production-ready solutions.
+              </p>
+              <p class="luxury-paragraph">
+                Passionate about creating efficient, user-centric applications and continuously learning to stay ahead in evolving tech environments.
+              </p>
+              
+              <div class="luxury-badges">
+                <div class="l-badge">
+                  <i class="fas fa-microchip"></i>
+                  <span>Next.js Expert</span>
+                </div>
+                <div class="l-badge">
+                  <i class="fas fa-database"></i>
+                  <span>Full-Stack</span>
+                </div>
+                <div class="l-badge">
+                  <i class="fas fa-brain"></i>
+                  <span>AI Integrated</span>
                 </div>
               </div>
             </div>
-
-            <!-- Backend & Tools -->
-            <div class="col-md-6">
-              <div class="skill-category">
-                <h4>
-                  <i class="fas fa-server text-success"></i> Backend & Tools
-                </h4>
-                <div class="skill-grid">
-                  <div class="skill-item">
-                    <span>Node.js</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Express.js</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>REST APIs</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 88%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Authentication (JWT, RBAC)</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>MongoDB / Mongoose</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>MySQL</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Git / GitHub / Bitbucket</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Postman / Vercel</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Jira / Slack</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 88%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <span>Agile / Scrum</span>
-                    <div class="skill-bar">
-                      <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                  </div>
+          </div>
+          
+          <!-- Right Side: Heading -->
+          <div class="col-lg-4 order-1 order-lg-2 animate animate-right">
+            <div class="luxury-heading-box">
+              <div class="luxury-heading-inner">
+                <h2 class="luxury-title-text">
+                  Professional<br />
+                  <span class="gold-text">Summary</span>
+                </h2>
+                <div class="luxury-signature">
+                  <div class="luxury-line"></div>
+                  <i class="fas fa-gem gold-icon"></i>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Full Width Core Competencies Slider -->
-      <div class="core-slider-wrapper">
-        <h4 class="core-title">
-          <i class="fas fa-lightbulb text-success"></i> Core Competencies
-        </h4>
-        <div class="core-slider">
-          <div class="core-track">
-            <div class="core-item">UI/UX Implementation</div>
-            <div class="core-item">API Integration</div>
-            <div class="core-item">State Management</div>
-            <div class="core-item">Responsive Web Design</div>
-            <div class="core-item">Problem Solving</div>
-            <div class="core-item">Code Optimization</div>
-            <div class="core-item">Cross-Team Collaboration</div>
-            <!-- duplicated for smooth infinite loop -->
-            <div class="core-item">UI/UX Implementation</div>
-            <div class="core-item">API Integration</div>
-            <div class="core-item">State Management</div>
-            <div class="core-item">Responsive Web Design</div>
-            <div class="core-item">Problem Solving</div>
-            <div class="core-item">Code Optimization</div>
-            <div class="core-item">Cross-Team Collaboration</div>
+    <!-- Education Section - Creative Diamond Design -->
+    <section id="education" class="edu-modern-section">
+      <div class="edu-shape-overlay"></div>
+      <div class="container relative">
+        <div class="skills-header mb-5 text-center">
+          <h2 class="section-title skills-creative-title">Academic Journey</h2>
+          <div class="title-accent mx-auto"></div>
+        </div>
+        
+        <div class="edu-minimal-list animate animate-up">
+          <!-- BCA Milestone -->
+          <div class="edu-item-minimal">
+            <div class="edu-dot-marker"></div>
+            <div class="edu-content-minimal">
+              <div class="edu-meta-minimal">
+                <span class="edu-year-minimal">2021 – 2024</span>
+                <span class="edu-mark-badge-minimal">7.5 CGPA</span>
+              </div>
+              <h3 class="edu-title-minimal">Bachelor of Computer Application</h3>
+              <p class="edu-org-minimal">Kannur University | St. Jude's Arts and Science College</p>
+            </div>
+          </div>
+
+          <!-- Higher Secondary Milestone -->
+          <div class="edu-item-minimal mt-5">
+            <div class="edu-dot-marker"></div>
+            <div class="edu-content-minimal">
+              <div class="edu-meta-minimal">
+                <span class="edu-year-minimal">2019 – 2021</span>
+                <span class="edu-mark-badge-minimal">76% Aggregate</span>
+              </div>
+              <h3 class="edu-title-minimal">Higher Secondary Education</h3>
+              <p class="edu-org-minimal">Bio-Science specialization | St. Jude's H S S</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="edu-float-circle"></div>
+        <div class="edu-float-ring"></div>
+      </div>
+    </section>
+
+    <!-- Premium Skills Section -->
+    <section id="skills" class="skills-premium">
+      <div class="skills-bg-glow"></div>
+      <div class="container">
+        <div class="skills-header mb-5">
+          <h2 class="section-title skills-creative-title">Core Competencies</h2>
+          <div class="title-accent mx-auto"></div>
+        </div>
+        <div class="row g-4">
+          <!-- Frontend Development -->
+          <div class="col-lg-4 col-md-6 animate animate-up">
+            <div class="skill-card-premium">
+              <div class="skill-card-header">
+                <div class="skill-icon-wrap">
+                  <i class="fas fa-desktop"></i>
+                </div>
+                <h3>Frontend Development</h3>
+              </div>
+              <div class="skill-tags">
+                <span>React.js</span> <span>Next.js</span> <span>Angular</span>
+                <span>JavaScript (ES6+)</span> <span>Redux</span> <span>HTML5</span>
+                <span>CSS3</span> <span>Bootstrap</span> <span>Tailwind CSS</span>
+                <span>shadcn/ui</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="col-lg-4 col-md-6 animate animate-up delay-1">
+            <div class="skill-card-premium">
+              <div class="skill-card-header">
+                <div class="skill-icon-wrap">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3>Backend & Database</h3>
+              </div>
+              <div class="skill-tags">
+                <span>Node.js</span> <span>Express.js</span> <span>RESTful APIs</span>
+                <span>Authentication (JWT, RBAC)</span> <span>MongoDB</span>
+                <span>Mongoose</span> <span>MySQL</span> <span>Supabase</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & Productivity Tools -->
+          <div class="col-lg-4 col-md-6 animate animate-up delay-2">
+            <div class="skill-card-premium">
+              <div class="skill-card-header">
+                <div class="skill-icon-wrap">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI & Productivity</h3>
+              </div>
+              <div class="skill-tags">
+                <span>Antigravity</span> <span>Cursor</span> <span>Windruf</span>
+                <span>Lovable</span> <span>Bolt</span> <span>TempAI</span>
+                <span>Stitch</span> <span>Firebase Studio</span> <span>Notion AI</span>
+                <span>ChatGPT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Methodologies -->
+          <div class="col-lg-4 col-md-6 animate animate-up">
+            <div class="skill-card-premium">
+              <div class="skill-card-header">
+                <div class="skill-icon-wrap">
+                  <i class="fas fa-tools"></i>
+                </div>
+                <h3>Tools & Methodologies</h3>
+              </div>
+              <div class="skill-tags">
+                <span>Git</span> <span>GitHub</span> <span>Bitbucket</span>
+                <span>Postman</span> <span>Jira</span> <span>Slack</span>
+                <span>Agile/Scrum</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hosting & Deployment -->
+          <div class="col-lg-4 col-md-6 animate animate-up delay-1">
+            <div class="skill-card-premium">
+              <div class="skill-card-header">
+                <div class="skill-icon-wrap">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <h3>Hosting & Deployment</h3>
+              </div>
+              <div class="skill-tags">
+                <span>Vercel</span> <span>Render</span> <span>Netlify</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEO & Performance -->
+          <div class="col-lg-4 col-md-6 animate animate-up delay-2">
+            <div class="skill-card-premium">
+              <div class="skill-card-header">
+                <div class="skill-icon-wrap">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>SEO & Performance</h3>
+              </div>
+              <div class="skill-tags">
+                <span>On-page SEO</span> <span>Meta Tags</span> <span>Semantic HTML</span>
+                <span>Lighthouse Audits</span> <span>Page Speed Optimization</span>
+                <span class="badge-level">Intermediate level</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
+    <!-- Professional Experience Section - Premium Design -->
+    <section id="experience" class="exp-premium-section">
+      <div class="exp-bg-pattern"></div>
       <div class="container">
         <h2 class="section-title">Professional Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item right animate animate-left delay-1">
-            <div class="timeline-content">
-              <div class="timeline-date">Aug 2025 – Present</div>
-              <h3 class="timeline-title">Software Developer (Trainee)</h3>
-              <p class="timeline-company">Think Forge Global, Malappuram</p>
-              <ul class="timeline-description">
-                <li>
-                  Next.js, Tailwind CSS, Bitbucket, Jira, Slack, Agile/Scrum
-                </li>
-                <li>
-                  Contributed to the MorfinFX trading platform using Next.js and
-                  React hooks.
-                </li>
-                <li>
-                  Enhanced UI performance and SEO with optimized components.
-                </li>
-                <li>Collaborated in Agile sprints via Jira and Slack.</li>
-                <li>
-                  Integrated RESTful APIs ensuring consistent UI behavior.
-                </li>
-                <li>Conducted code reviews and performance tuning.</li>
+        <div class="premium-timeline">
+          <!-- Experience 1 -->
+          <div class="premium-item animate animate-up">
+            <div class="prem-icon-box">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="prem-content-card">
+              <div class="prem-header">
+                <span class="prem-date">Aug 2025 – Present</span>
+                <h3 class="prem-title">Full Stack Developer</h3>
+                <p class="prem-company">Think Forge Global</p>
+              </div>
+              <div class="prem-project-box mb-3">
+                <i class="fas fa-project-diagram"></i>
+                <strong>Project: Zyvest Capital – Trading Platform</strong>
+              </div>
+              <div class="prem-tech-stack mb-4">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Bitbucket</span>
+                <span class="tech-tag">Jira</span>
+                <span class="tech-tag">Slack</span>
+                <span class="tech-tag">Agile/Scrum</span>
+                <span class="tech-tag">SEO</span>
+                <span class="tech-tag">shadcn/ui</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Chart Libraries</span>
+              </div>
+              <ul class="prem-list">
+                <li>Spearheading frontend architecture and full-stack feature development for Zyvest Capital, a professional trading and investment platform serving multi-role users (Admin, Employee, and User).</li>
+                <li>Led design implementation and REST API integration for all analytical graphs, performance tracking dashboards, and financial data visualizations across Admin, User, and Employee interfaces using Next.js, Tailwind CSS, and shadcn/ui.</li>
+                <li>Built fully responsive, pixel-perfect layouts optimized for desktop, tablet, and mobile devices, ensuring seamless user experience and cross-device compatibility.</li>
+                <li>Integrated real-time RESTful APIs for trading data, user portfolios, financial metrics, and dynamic updates, significantly improving platform responsiveness and data accuracy.</li>
+                <li>Optimized frontend performance, implemented on-page SEO best practices, and conducted Lighthouse audits to achieve faster load times and better search visibility.</li>
+                <li>Collaborated with backend developers and product teams in Agile/Scrum sprints using Jira, Bitbucket, and Slack; actively participated in code reviews, debugging, and feature enhancements to maintain 100% production stability.</li>
+                <li>Leveraged AI tools (Antigravity, Cursor) to accelerate UI component development and iteration while maintaining clean, reusable code.</li>
               </ul>
             </div>
           </div>
 
-          <div class="timeline-item left animate animate-right">
-            <div class="timeline-content">
-              <div class="timeline-date">Mar 2025 – Aug 2025</div>
-              <h3 class="timeline-title">Junior Web Developer</h3>
-              <p class="timeline-company">Nexpression, Ernakulam</p>
-              <ul class="timeline-description">
-                <li>
-                  Angular, React.js, Node.js, Express.js, MongoDB, Bootstrap,
-                  Tailwind CSS
-                </li>
-                <li>Built scalable MERN/MEAN stack applications</li>
-                <li>
-                  Developed reusable components with Bootstrap/Tailwind CSS
-                </li>
-                <li>Collaborated with teams to optimize UX and performance</li>
-                <li>Implemented JWT authentication and RBAC security</li>
-                <li>
-                  Managed code with Git/GitHub and tested APIs via Postman
-                </li>
+          <!-- Experience 2 -->
+          <div class="premium-item animate animate-up delay-1">
+            <div class="prem-icon-box">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="prem-content-card">
+              <div class="prem-header">
+                <span class="prem-date">Mar 2025 – Aug 2025</span>
+                <h3 class="prem-title">Junior Web Developer Intern</h3>
+                <p class="prem-company">Nexpression Private Limited</p>
+              </div>
+              <div class="prem-tech-stack mb-4">
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">GitHub</span>
+                <span class="tech-tag">Postman</span>
+              </div>
+              <ul class="prem-list">
+                <li>Developed and maintained a full-stack e-commerce website using the MEAN stack (Angular for frontend, Node.js + Express.js + MongoDB for backend).</li>
+                <li>Designed and implemented both frontend and backend components, including secure user authentication (JWT + RBAC), dynamic product catalogs, shopping cart, and order management systems.</li>
+                <li>Built Single Page Applications (SPAs) with modular, reusable Angular components, resulting in improved development efficiency and superior user experience across all devices.</li>
+                <li>Consumed and optimized RESTful APIs for real-time data synchronization between frontend and backend; collaborated closely with UI/UX designers to enhance application performance and visual appeal.</li>
+                <li>Integrated Bootstrap and Tailwind CSS for fully responsive designs and used Git, GitHub, and Postman for version control and API testing.</li>
+                <li>Applied SEO fundamentals and performance optimizations to ensure fast-loading pages and better organic reach.</li>
               </ul>
             </div>
           </div>
-          <div class="timeline-item right animate animate-left delay-1">
-            <div class="timeline-content">
-              <div class="timeline-date">2024 – Present</div>
-              <h3 class="timeline-title">Freelance Web Developer</h3>
-              <ul class="timeline-description">
-                <li>
-                  Developed and deployed a College Management System with
-                  full-stack CRUD.
-                </li>
-                <li>
-                  Delivered multiple client-facing projects with responsive,
-                  user-centric designs.
-                </li>
+
+          <!-- Experience 3 -->
+          <div class="premium-item animate animate-up delay-2">
+            <div class="prem-icon-box">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+            <div class="prem-content-card">
+              <div class="prem-header">
+                <span class="prem-date">2024 – Present</span>
+                <h3 class="prem-title">Freelance Web Developer</h3>
+              </div>
+              <ul class="prem-list">
+                <li>Developed and deployed a College Management System with full-stack CRUD.</li>
+                <li>Delivered multiple client-facing projects with responsive, user-centric designs.</li>
               </ul>
             </div>
           </div>
@@ -428,7 +424,35 @@
           <div class="project-card">
             <div class="project-img-wrapper">
               <img
-                src="./image/college.jpg"
+                src="./image/kph.png"
+                alt="KALANGARA PAINT HOUSE (KPH) WEBSITE"
+                class="project-img"
+              />
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">KALANGARA PAINT HOUSE (KPH) WEBSITE</h5>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Supabase</span>
+              </div>
+              <p class="card-text">
+                Full-stack business website with admin dashboard, WhatsApp enquiry integration, image-to-PDF conversion, and Supabase storage.
+              </p>
+              <a
+                href="https://www.kalangarapaints.com/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img
+                src="./image/college_new.png"
                 alt="College Management System"
                 class="project-img"
               />
@@ -454,11 +478,11 @@
             </div>
           </div>
 
-          <!-- Project 2 -->
+          <!-- Project 3 -->
           <div class="project-card">
             <div class="project-img-wrapper">
               <img
-                src="./image/country.jpg"
+                src="./image/country_new.png"
                 alt="REST Countries Explorer"
                 class="project-img"
               />
@@ -483,11 +507,11 @@
             </div>
           </div>
 
-          <!-- Project 3 -->
+          <!-- Project 4 -->
           <div class="project-card">
             <div class="project-img-wrapper">
               <img
-                src="./image/ecommerce.jpg"
+                src="./image/ecommerce_new.png"
                 alt="E-Commerce Dashboard"
                 class="project-img"
               />
@@ -512,7 +536,7 @@
             </div>
           </div>
 
-          <!-- Project 4 -->
+          <!-- Project 5 -->
           <div class="project-card">
             <div class="project-img-wrapper">
               <img
@@ -534,6 +558,171 @@
               </p>
               <a
                 href="https://trade-learners.vercel.app/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img
+                src="./image/chocomint.png"
+                alt="ChocoMint E-Commerce Platform"
+                class="project-img"
+              />
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">ChocoMint E-Commerce Platform</h5>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">WhatsApp API</span>
+              </div>
+              <p class="card-text">
+                E-commerce platform with admin dashboard, product management, analytics, and WhatsApp-based ordering system.
+              </p>
+              <a
+                href="https://choco-mint.vercel.app/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img
+                src="./image/truenews.png"
+                alt="True News Admin Dashboard"
+                class="project-img"
+              />
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">True News Admin Dashboard</h5>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">MongoDB</span>
+              </div>
+              <p class="card-text">
+                News management system with full CRUD operations, ad management, category filtering, and analytics dashboard.
+              </p>
+              <a
+                href="https://true-news-kappa.vercel.app/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img
+                src="./image/phoenix.png"
+                alt="Phoenix Architecture Website"
+                class="project-img"
+              />
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">Phoenix Architecture Website</h5>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">CSS</span>
+              </div>
+              <p class="card-text">
+                Modern single-page architecture portfolio website with smooth UI, responsive design, and project showcase.
+              </p>
+              <a
+                href="https://phoenix-nine-alpha.vercel.app/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img
+                src="./image/amilas.png"
+                alt="Amilas Masala Paste Website"
+                class="project-img"
+              />
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">Amilas Masala Paste Website</h5>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">WhatsApp Integration</span>
+              </div>
+              <p class="card-text">
+                Product-based website with WhatsApp ordering, showcasing premium masala pastes, recipes, and brand storytelling.
+              </p>
+              <a
+                href="https://amilas-masala-paste.vercel.app/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 10 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img
+                src="./image/securityspy.png"
+                alt="Security Spy Website"
+                class="project-img"
+              />
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">Security Spy Website</h5>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">UI/UX</span>
+              </div>
+              <p class="card-text">
+                Premium security services website with modern UI, service highlights, and consultation features.
+              </p>
+              <a
+                href="https://security-spy.vercel.app/"
+                target="_blank"
+                class="btn btn-success"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 11 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img
+                src="./image/ararchitect.png"
+                alt="AR Architect & Interior Website"
+                class="project-img"
+              />
+            </div>
+            <div class="project-body">
+              <h5 class="project-title">AR Architect & Interior Website</h5>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">UI/UX</span>
+                <span class="tech-badge">Responsive Design</span>
+              </div>
+              <p class="card-text">
+                Luxury architecture and interior design website with portfolio, services, WhatsApp enquiry system, and premium user experience.
+              </p>
+              <a
+                href="https://ararchitectsin.vercel.app/"
                 target="_blank"
                 class="btn btn-success"
                 >View Project</a
@@ -748,6 +937,7 @@
       <div class="container">
         <div class="footer-links">
           <a href="#about">About</a>
+          <a href="#summary">Summary</a>
           <a href="#education">Education</a>
           <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>

@@ -106,9 +106,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   );
 
-  // Track scroll direction
+  // Track scroll for navbar and general direction
+  const navbar = document.querySelector(".navbar");
   window.addEventListener("scroll", () => {
     const st = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Toggle Scrolled Class
+    if (st > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+
     if (st > lastScrollTop) {
       scrollDirection = "down";
     } else {
