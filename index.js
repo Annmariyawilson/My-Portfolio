@@ -294,6 +294,35 @@ document.addEventListener("DOMContentLoaded", () => {
       profileImg.style.transform = `translateY(${scrollPosition * 0.1}px)`;
     });
   }
+
+  // Initialize Swiper for Skills
+  const skillsSwiper = new Swiper(".skills-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
 });
 
 // Duplicate core items for seamless infinite scroll

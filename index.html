@@ -13,9 +13,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
 
@@ -92,7 +98,7 @@
           </div>
           <div class="col-lg-5 order-1 order-lg-2 text-center mb-5 mb-lg-0 animate animate-right">
             <div class="profile-img-container">
-              <img src="./image/p1.jpeg" alt="Annmariya Wilson" class="profile-img" />
+              <img src="./image/p1.jpeg" alt="Annmariya Wilson" class="profile-img" fetchpriority="high" decoding="async" />
             </div>
           </div>
         </div>
@@ -161,7 +167,7 @@
       <div class="edu-shape-overlay"></div>
       <div class="container relative">
         <div class="skills-header mb-5 text-center">
-          <h2 class="section-title skills-creative-title">Academic Journey</h2>
+          <h2 class="section-title" data-title="Education">Academic Journey</h2>
           <div class="title-accent mx-auto"></div>
         </div>
         
@@ -199,116 +205,122 @@
       </div>
     </section>
 
-    <!-- Premium Skills Section -->
     <section id="skills" class="skills-premium">
       <div class="skills-bg-glow"></div>
       <div class="container">
-        <div class="skills-header mb-5">
-          <h2 class="section-title skills-creative-title">Core Competencies</h2>
+        <div class="skills-header mb-5 text-center">
+          <h2 class="section-title" data-title="Skills">Core Competencies</h2>
           <div class="title-accent mx-auto"></div>
         </div>
-        <div class="row g-4">
-          <!-- Frontend Development -->
-          <div class="col-lg-4 col-md-6 animate animate-up">
-            <div class="skill-card-premium">
-              <div class="skill-card-header">
-                <div class="skill-icon-wrap">
-                  <i class="fas fa-desktop"></i>
+        
+        <div class="swiper skills-swiper">
+          <div class="swiper-wrapper">
+            <!-- Frontend Development -->
+            <div class="swiper-slide">
+              <div class="skill-card-premium">
+                <div class="skill-card-header">
+                  <div class="skill-icon-wrap">
+                    <i class="fas fa-desktop"></i>
+                  </div>
+                  <h3>Frontend Development</h3>
                 </div>
-                <h3>Frontend Development</h3>
-              </div>
-              <div class="skill-tags">
-                <span>React.js</span> <span>Next.js</span> <span>Angular</span>
-                <span>JavaScript (ES6+)</span> <span>Redux</span> <span>HTML5</span>
-                <span>CSS3</span> <span>Bootstrap</span> <span>Tailwind CSS</span>
-                <span>shadcn/ui</span>
+                <div class="skill-tags">
+                  <span>React.js</span> <span>Next.js</span> <span>Angular</span>
+                  <span>JavaScript (ES6+)</span> <span>Redux</span> <span>HTML5</span>
+                  <span>CSS3</span> <span>Bootstrap</span> <span>Tailwind CSS</span>
+                  <span>shadcn/ui</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Backend Development -->
-          <div class="col-lg-4 col-md-6 animate animate-up delay-1">
-            <div class="skill-card-premium">
-              <div class="skill-card-header">
-                <div class="skill-icon-wrap">
-                  <i class="fas fa-database"></i>
+            <!-- Backend Development -->
+            <div class="swiper-slide">
+              <div class="skill-card-premium">
+                <div class="skill-card-header">
+                  <div class="skill-icon-wrap">
+                    <i class="fas fa-database"></i>
+                  </div>
+                  <h3>Backend & Database</h3>
                 </div>
-                <h3>Backend & Database</h3>
-              </div>
-              <div class="skill-tags">
-                <span>Node.js</span> <span>Express.js</span> <span>RESTful APIs</span>
-                <span>Authentication (JWT, RBAC)</span> <span>MongoDB</span>
-                <span>Mongoose</span> <span>MySQL</span> <span>Supabase</span>
+                <div class="skill-tags">
+                  <span>Node.js</span> <span>Express.js</span> <span>RESTful APIs</span>
+                  <span>Authentication (JWT, RBAC)</span> <span>MongoDB</span>
+                  <span>Mongoose</span> <span>MySQL</span> <span>Supabase</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- AI & Productivity Tools -->
-          <div class="col-lg-4 col-md-6 animate animate-up delay-2">
-            <div class="skill-card-premium">
-              <div class="skill-card-header">
-                <div class="skill-icon-wrap">
-                  <i class="fas fa-robot"></i>
+            <!-- AI & Productivity Tools -->
+            <div class="swiper-slide">
+              <div class="skill-card-premium">
+                <div class="skill-card-header">
+                  <div class="skill-icon-wrap">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <h3>AI & Productivity</h3>
                 </div>
-                <h3>AI & Productivity</h3>
-              </div>
-              <div class="skill-tags">
-                <span>Antigravity</span> <span>Cursor</span> <span>Windruf</span>
-                <span>Lovable</span> <span>Bolt</span> <span>TempAI</span>
-                <span>Stitch</span> <span>Firebase Studio</span> <span>Notion AI</span>
-                <span>ChatGPT</span>
+                <div class="skill-tags">
+                  <span>Antigravity</span> <span>Cursor</span> <span>Windruf</span>
+                  <span>Lovable</span> <span>Bolt</span> <span>TempAI</span>
+                  <span>Stitch</span> <span>Firebase Studio</span> <span>Notion AI</span>
+                  <span>ChatGPT</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Tools & Methodologies -->
-          <div class="col-lg-4 col-md-6 animate animate-up">
-            <div class="skill-card-premium">
-              <div class="skill-card-header">
-                <div class="skill-icon-wrap">
-                  <i class="fas fa-tools"></i>
+            <!-- Tools & Methodologies -->
+            <div class="swiper-slide">
+              <div class="skill-card-premium">
+                <div class="skill-card-header">
+                  <div class="skill-icon-wrap">
+                    <i class="fas fa-tools"></i>
+                  </div>
+                  <h3>Tools & Methodologies</h3>
                 </div>
-                <h3>Tools & Methodologies</h3>
-              </div>
-              <div class="skill-tags">
-                <span>Git</span> <span>GitHub</span> <span>Bitbucket</span>
-                <span>Postman</span> <span>Jira</span> <span>Slack</span>
-                <span>Agile/Scrum</span>
+                <div class="skill-tags">
+                  <span>Git</span> <span>GitHub</span> <span>Bitbucket</span>
+                  <span>Postman</span> <span>Jira</span> <span>Slack</span>
+                  <span>Agile/Scrum</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Hosting & Deployment -->
-          <div class="col-lg-4 col-md-6 animate animate-up delay-1">
-            <div class="skill-card-premium">
-              <div class="skill-card-header">
-                <div class="skill-icon-wrap">
-                  <i class="fas fa-cloud-upload-alt"></i>
+            <!-- Hosting & Deployment -->
+            <div class="swiper-slide">
+              <div class="skill-card-premium">
+                <div class="skill-card-header">
+                  <div class="skill-icon-wrap">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                  </div>
+                  <h3>Hosting & Deployment</h3>
                 </div>
-                <h3>Hosting & Deployment</h3>
-              </div>
-              <div class="skill-tags">
-                <span>Vercel</span> <span>Render</span> <span>Netlify</span>
+                <div class="skill-tags">
+                  <span>Vercel</span> <span>Render</span> <span>Netlify</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- SEO & Performance -->
-          <div class="col-lg-4 col-md-6 animate animate-up delay-2">
-            <div class="skill-card-premium">
-              <div class="skill-card-header">
-                <div class="skill-icon-wrap">
-                  <i class="fas fa-chart-line"></i>
+            <!-- SEO & Performance -->
+            <div class="swiper-slide">
+              <div class="skill-card-premium">
+                <div class="skill-card-header">
+                  <div class="skill-icon-wrap">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <h3>SEO & Performance</h3>
                 </div>
-                <h3>SEO & Performance</h3>
-              </div>
-              <div class="skill-tags">
-                <span>On-page SEO</span> <span>Meta Tags</span> <span>Semantic HTML</span>
-                <span>Lighthouse Audits</span> <span>Page Speed Optimization</span>
-                <span class="badge-level">Intermediate level</span>
+                <div class="skill-tags">
+                  <span>On-page SEO</span> <span>Meta Tags</span> <span>Semantic HTML</span>
+                  <span>Lighthouse Audits</span> <span>Page Speed Optimization</span>
+                </div>
               </div>
             </div>
           </div>
+          
+          <!-- Slider Navigation & Pagination -->
+          <div class="swiper-pagination mt-5"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
@@ -318,7 +330,7 @@
     <section id="experience" class="exp-premium-section">
       <div class="exp-bg-pattern"></div>
       <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
+        <h2 class="section-title" data-title="Experience">Professional Experience</h2>
         <div class="premium-timeline">
           <!-- Experience 1 -->
           <div class="premium-item animate animate-up">
@@ -418,16 +430,18 @@
     <!--  Projects Section -->
     <section id="projects">
       <div class="container">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title" data-title="Portfolio">Projects</h2>
         <div class="projects-grid">
           <!-- Project 1 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/kph.png"
-                alt="KALANGARA PAINT HOUSE (KPH) WEBSITE"
-                class="project-img"
-              />
+                <img
+                  src="./image/kph.png"
+                  alt="KALANGARA PAINT HOUSE (KPH) WEBSITE"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">KALANGARA PAINT HOUSE (KPH) WEBSITE</h5>
@@ -451,11 +465,13 @@
           <!-- Project 2 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/college_new.png"
-                alt="College Management System"
-                class="project-img"
-              />
+                <img
+                  src="./image/college_new.png"
+                  alt="College Management System"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">College Management System</h5>
@@ -481,11 +497,13 @@
           <!-- Project 3 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/country_new.png"
-                alt="REST Countries Explorer"
-                class="project-img"
-              />
+                <img
+                  src="./image/country_new.png"
+                  alt="REST Countries Explorer"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">REST Countries Explorer</h5>
@@ -510,11 +528,13 @@
           <!-- Project 4 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/ecommerce_new.png"
-                alt="E-Commerce Dashboard"
-                class="project-img"
-              />
+                <img
+                  src="./image/ecommerce_new.png"
+                  alt="E-Commerce Dashboard"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">E-Commerce Dashboard</h5>
@@ -539,11 +559,13 @@
           <!-- Project 5 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/trade.jpg"
-                alt="Trade Learners UI"
-                class="project-img"
-              />
+                <img
+                  src="./image/trade.jpg"
+                  alt="Trade Learners UI"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">Trade Learners UI</h5>
@@ -568,11 +590,13 @@
           <!-- Project 6 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/chocomint.png"
-                alt="ChocoMint E-Commerce Platform"
-                class="project-img"
-              />
+                <img
+                  src="./image/chocomint.png"
+                  alt="ChocoMint E-Commerce Platform"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">ChocoMint E-Commerce Platform</h5>
@@ -596,11 +620,13 @@
           <!-- Project 7 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/truenews.png"
-                alt="True News Admin Dashboard"
-                class="project-img"
-              />
+                <img
+                  src="./image/truenews.png"
+                  alt="True News Admin Dashboard"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">True News Admin Dashboard</h5>
@@ -624,11 +650,13 @@
           <!-- Project 8 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/phoenix.png"
-                alt="Phoenix Architecture Website"
-                class="project-img"
-              />
+                <img
+                  src="./image/phoenix.png"
+                  alt="Phoenix Architecture Website"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">Phoenix Architecture Website</h5>
@@ -651,11 +679,13 @@
           <!-- Project 9 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/amilas.png"
-                alt="Amilas Masala Paste Website"
-                class="project-img"
-              />
+                <img
+                  src="./image/amilas.png"
+                  alt="Amilas Masala Paste Website"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">Amilas Masala Paste Website</h5>
@@ -678,11 +708,13 @@
           <!-- Project 10 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/securityspy.png"
-                alt="Security Spy Website"
-                class="project-img"
-              />
+                <img
+                  src="./image/securityspy.png"
+                  alt="Security Spy Website"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">Security Spy Website</h5>
@@ -705,11 +737,13 @@
           <!-- Project 11 -->
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img
-                src="./image/ararchitect.png"
-                alt="AR Architect & Interior Website"
-                class="project-img"
-              />
+                <img
+                  src="./image/ararchitect.png"
+                  alt="AR Architect & Interior Website"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
             </div>
             <div class="project-body">
               <h5 class="project-title">AR Architect & Interior Website</h5>
@@ -735,113 +769,122 @@
 
     <!-- Certifications Section -->
     <section id="certifications">
-      <div class="container">
-        <h2 class="section-title">Certifications</h2>
+      <div class="cert-bg-shapes">
+        <div class="cert-shape shape-1"></div>
+        <div class="cert-shape shape-2"></div>
+        <div class="cert-shape shape-3"></div>
+      </div>
+      <div class="container relative">
+        <h2 class="section-title" data-title="Credentials">Certifications</h2>
         <div class="row">
           <!-- Tata Group Certification -->
-          <div class="col-lg-4 col-md-6 animate mt-3">
+          <div class="col-lg-4 col-md-6 animate mt-4">
             <div class="certification-card">
-              <h3 class="certification-title">
-                Tata Group - Cybersecurity Analyst Job Simulation
-              </h3>
-              <p class="certification-issuer">
-                <strong>Issuing Organization:</strong> Forage
-              </p>
-              <p class="certification-date">
-                <strong>Issue Date:</strong> February 2024
-              </p>
-              <p><strong>Credential ID:</strong> KKBAt8SkYC4hSBPfs</p>
-              <a
-                href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/gmf3ypEXBj2wvfQWC_Tata%20Group_Exdne3RPDNvbbBXyC_1708620481345_completion_certificate.pdf"
-                target="_blank"
-                class="btn btn-success mt-3"
-                >View Certificate</a
-              >
+              <h3 class="certification-title">Tata Group - Cybersecurity Analyst Job Simulation</h3>
+              <div class="cert-meta">
+                <p class="certification-issuer">
+                  <i class="fas fa-university"></i>
+                  <span><strong>Issuer:</strong> Forage</span>
+                </p>
+                <p class="certification-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Feb 2024</span>
+                </p>
+                <p class="cert-id"><i class="fas fa-id-card"></i> KKBAt8SkYC4hSBPfs</p>
+              </div>
+              <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/gmf3ypEXBj2wvfQWC_Tata%20Group_Exdne3RPDNvbbBXyC_1708620481345_completion_certificate.pdf" target="_blank" class="btn btn-success mt-4">
+                <span>View Certificate</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
           </div>
 
           <!-- Accenture Certification -->
-          <div class="col-lg-4 col-md-6 animate delay-1 mt-3">
+          <div class="col-lg-4 col-md-6 animate delay-1 mt-4">
             <div class="certification-card">
-              <h3 class="certification-title">
-                Accenture North America - Data Analytics and Visualization Job
-                Simulation
-              </h3>
-              <p class="certification-issuer">
-                <strong>Issuing Organization:</strong> Forage
-              </p>
-              <p class="certification-date">
-                <strong>Issue Date:</strong> February 2024
-              </p>
-              <p><strong>Credential ID:</strong> Ao4SFh66XBiq8xMNh</p>
-              <a
-                href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_Exdne3RPDNvbbBXyC_1708849965426_completion_certificate.pdf"
-                target="_blank"
-                class="btn btn-success mt-3"
-                >View Certificate</a
-              >
+              <h3 class="certification-title">Accenture North America - Data Analytics</h3>
+              <div class="cert-meta">
+                <p class="certification-issuer">
+                  <i class="fas fa-university"></i>
+                  <span><strong>Issuer:</strong> Forage</span>
+                </p>
+                <p class="certification-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Feb 2024</span>
+                </p>
+                <p class="cert-id"><i class="fas fa-id-card"></i> Ao4SFh66XBiq8xMNh</p>
+              </div>
+              <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_Exdne3RPDNvbbBXyC_1708849965426_completion_certificate.pdf" target="_blank" class="btn btn-success mt-4">
+                <span>View Certificate</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
           </div>
 
           <!-- IBM Certification -->
-          <div class="col-lg-4 col-md-6 animate delay-2 mt-3">
+          <div class="col-lg-4 col-md-6 animate delay-2 mt-4">
             <div class="certification-card">
-              <h3 class="certification-title">
-                Enterprise Design Thinking Practitioner
-              </h3>
-              <p class="certification-issuer">
-                <strong>Issuing Organization:</strong> IBM
-              </p>
-              <p class="certification-date">
-                <strong>Issue Date:</strong> March 2024
-              </p>
-              <a
-                href="https://www.credly.com/badges/ac2b22a0-6db6-4ca4-9dc1-224441f40f74/linked_in_profile"
-                target="_blank"
-                class="btn btn-success mt-3"
-                >View Certificate</a
-              >
+              <h3 class="certification-title">Enterprise Design Thinking Practitioner</h3>
+              <div class="cert-meta">
+                <p class="certification-issuer">
+                  <i class="fas fa-university"></i>
+                  <span><strong>Issuer:</strong> IBM</span>
+                </p>
+                <p class="certification-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Mar 2024</span>
+                </p>
+              </div>
+              <a href="https://www.credly.com/badges/ac2b22a0-6db6-4ca4-9dc1-224441f40f74/linked_in_profile" target="_blank" class="btn btn-success mt-4">
+                <span>View Certificate</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
           </div>
 
           <!-- MERN Stack Course -->
-          <div class="col-lg-4 col-md-6 animate mt-3">
+          <div class="col-lg-4 col-md-6 animate mt-4">
             <div class="certification-card">
               <h3 class="certification-title">MERN Stack Development Course</h3>
-              <p class="certification-issuer">
-                <strong>Issuing Organization:</strong> Luminar Technolab
-              </p>
-              <p class="certification-location">
-                <strong>Location:</strong> Calicut, Kerala
-              </p>
-              <p class="certification-date">
-                <strong>Duration:</strong> May - December 2025
-              </p>
-              <a
-                href="https://drive.google.com/file/d/1RRakbO9A7g9SByOrOti4SkGVAuqWlYOK/view"
-                target="_blank"
-                class="btn btn-success mt-3"
-                >View Certificate</a
-              >
+              <div class="cert-meta">
+                <p class="certification-issuer">
+                  <i class="fas fa-building"></i>
+                  <span><strong>Issuer:</strong> Luminar Technolab</span>
+                </p>
+                <p class="certification-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Calicut, Kerala</span>
+                </p>
+                <p class="certification-date">
+                  <i class="fas fa-clock"></i>
+                  <span>May - Dec 2025</span>
+                </p>
+              </div>
+              <a href="https://drive.google.com/file/d/1RRakbO9A7g9SByOrOti4SkGVAuqWlYOK/view" target="_blank" class="btn btn-success mt-4">
+                <span>View Certificate</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
           </div>
 
           <!-- Job Application Essentials -->
-          <div class="col-lg-4 col-md-6 animate delay-1 mt-3">
+          <div class="col-lg-4 col-md-6 animate delay-1 mt-4">
             <div class="certification-card">
               <h3 class="certification-title">Job Application Essentials</h3>
-              <p class="certification-issuer">
-                <strong>Issuing Organization:</strong> IBM
-              </p>
-              <p class="certification-date">
-                <strong>Issue Date:</strong> April 2024
-              </p>
-              <a
-                href="https://www.credly.com/badges/e3f22f52-66c2-48d6-b75b-c0b9c4fe7fd6/linked_in_profile"
-                target="_blank"
-                class="btn btn-success mt-3"
-                >View Certificate</a
-              >
+              <div class="cert-meta">
+                <p class="certification-issuer">
+                  <i class="fas fa-university"></i>
+                  <span><strong>Issuer:</strong> IBM</span>
+                </p>
+                <p class="certification-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Apr 2024</span>
+                </p>
+              </div>
+              <a href="https://www.credly.com/badges/e3f22f52-66c2-48d6-b75b-c0b9c4fe7fd6/linked_in_profile" target="_blank" class="btn btn-success mt-4">
+                <span>View Certificate</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -851,7 +894,7 @@
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title" data-title="Connect">Get In Touch</h2>
         <div class="row">
           <div class="col-lg-5 animate">
             <div class="contact-info">
@@ -947,8 +990,9 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="index.js" defer></script>
   </body>
 </html>
