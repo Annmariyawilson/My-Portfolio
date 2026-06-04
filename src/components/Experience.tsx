@@ -20,13 +20,13 @@ export default function Experience() {
           <div className="col-lg-4 mb-5">
             <div id="experience-list" className="list-group sticky-experience-menu shadow-lg">
               <a className="list-group-item list-group-item-action active" href="#exp-1">
-                <h5 className="mb-1 fw-bold text-white">Junior Full Stack Developer</h5>
-                <small className="exp-duration">08/2025 – present</small>
+                <h5 className="mb-1 fw-bold text-white">Full Stack Developer</h5>
+                <small className="exp-duration">06/2025 – present</small>
                 <p className="mb-0 exp-company text-white-50">Think Forge Global LLP - Perintalmanna, Kerala</p>
               </a>
               <a className="list-group-item list-group-item-action" href="#exp-2">
                 <h5 className="mb-1 fw-bold text-white">Web Developer Intern</h5>
-                <small className="exp-duration">03/2025 – 08/2025</small>
+                <small className="exp-duration">03/2025 – 05/2025</small>
                 <p className="mb-0 exp-company text-white-50">Nexpression Pvt Ltd - Aluva, Ernakulam</p>
               </a>
               <a className="list-group-item list-group-item-action" href="#exp-3">

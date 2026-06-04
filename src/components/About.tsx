@@ -68,9 +68,9 @@ export default function About() {
               <defs>
                 <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
               </defs>
-              <text fontSize="11" fontWeight="bold" letterSpacing="1.5" fill="var(--pure-white)">
-                <textPath href="#circlePath" startOffset="0%">
-                  DOWNLOAD MY RESUME • DOWNLOAD MY RESUME • 
+              <text fontSize="11" fontWeight="bold" fill="var(--pure-white)">
+                <textPath href="#circlePath" startOffset="0%" textLength="225" lengthAdjust="spacing">
+                  DOWNLOAD 📄 MY 📄 LATEST 📄 RESUME 📄
                 </textPath>
               </text>
             </svg>
