@@ -41,6 +41,7 @@ export default function Footer() {
                   <a href="#projects">Projects</a>
                   <a href="#certifications">Certifications</a>
                   <a href="#contact">Contact</a>
+                  <a href="https://www.linkedin.com/in/annmariya-wilson/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
               </div>
             </div>
