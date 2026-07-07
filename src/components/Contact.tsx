@@ -41,7 +41,7 @@ export default function Contact() {
             <div className="contact-creative-wrapper mt-5">
               {/* Social Icons (Top Right) */}
               <div className="creative-social-icons">
-                <a href="https://linkedin.com/in/annmariyawilson" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/annmariya-wilson/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/annmariyawilson" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
                 <a href="https://instagram.com/annmariyawilson_" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
               </div>
